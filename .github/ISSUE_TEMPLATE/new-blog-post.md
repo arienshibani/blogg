@@ -1,13 +1,4 @@
 ---
-name: New Blog Post
-about: Create a new issue with this template to create a new blogpost
-title: "[POST]"
-labels: published
-assignees: ''
-
----
-
----
 title: Title of blogpost
 subtitle: Subtitle of blogpost
 description: Small description of the post
