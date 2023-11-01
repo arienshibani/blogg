@@ -1,8 +1,8 @@
-export const SITE_URL = 'https://swyxkit.netlify.app';
-export const APPROVED_POSTERS_GH_USERNAME = ['swyxio'];
-export const GH_USER_REPO = 'swyxio/swyxkit'; // used for pulling github issues and offering comments
-export const SITE_TITLE = 'SwyxKit';
-export const SITE_DESCRIPTION = "swyx's default SvelteKit + Tailwind starter";
+export const SITE_URL = 'https://niceblogg.netlify.app';
+export const APPROVED_POSTERS_GH_USERNAME = ['arienshibani'];
+export const GH_USER_REPO = 'arienshibani/blogg'; // used for pulling github issues and offering comments
+export const SITE_TITLE = 'The Nice Blogg';
+export const SITE_DESCRIPTION = "Best blogg in the world";
 export const DEFAULT_OG_IMAGE =
 	'https://user-images.githubusercontent.com/6764957/147861359-3ad9438f-41d1-47c8-aa05-95c7d18497f0.png';
 export const MY_TWITTER_HANDLE = 'swyx';
