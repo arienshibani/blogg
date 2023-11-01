@@ -45,7 +45,8 @@
 				<span
 					class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"
 				>
-					<span class="relative text-yellow-400 skew-y-3">{SITE_TITLE}</span>
+					<span class="relative text-yellow-400 skew-y-3">🌭 {SITE_TITLE} 🌭</span>
+					
 				</span>
 			
 			</h1>
@@ -65,8 +66,6 @@
 		</h3>
 		<div class="flex flex-col gap-6 md:flex-row">
 			<FeatureCard title="Hello World!" href="/hello-world" stringData="Nov 2022" />
-			
-
 		</div>
 
 	</section>
