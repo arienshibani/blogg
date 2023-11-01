@@ -1,4 +1,4 @@
-# The Nice Blog ☺️
+# The Nice Blog 🌭
 
 Sveltekit blog using [github issues as a CMS!](https://github.com/arienshibani/blogg/issues)
 
