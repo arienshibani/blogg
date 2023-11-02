@@ -84,7 +84,7 @@
 
 <section class="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center px-4 sm:px-8">
 	<h1 class="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
-		{SITE_TITLE} Blog
+		{SITE_TITLE}
 	</h1>
 	<p class="mb-4 text-gray-600 dark:text-gray-400">
 		 Search for blogposts by title, description, or content. 

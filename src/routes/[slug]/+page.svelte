@@ -123,7 +123,7 @@
 			on:mouseover={() => injectScript(commentsEl, issueNumber)}
 		>Load now</button>
 		<!-- <Comments ghMetadata={json.ghMetadata} /> -->
-	</div>
+	</div>	
 
 	<Newsletter />
 	<LatestPosts items={data.list} />

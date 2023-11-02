@@ -45,15 +45,14 @@
 				<span
 					class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"
 				>
-					<span class="relative text-yellow-400 skew-y-3">🌭 {SITE_TITLE} 🌭</span>
+					<span class="relative text-yellow-400 skew-y-3">{SITE_TITLE} 🌭</span>
 					
 				</span>
 			
 			</h1>
 
-			<h2 class="mb-4 text-gray-700 dark:text-gray-200">
+			<h2 class="mb-4 text-gray-700 dark:text-gray-200 text-center	">
 				My thoughts are <span class="font-semibold">nice</span> and they <span class="font-semibold">matter</span> 💕
-				
 			</h2>
 			
 		</div>
