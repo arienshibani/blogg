@@ -15,6 +15,9 @@
 	// technically this is a slightly different type because doesn't have 'content' but we'll let it slide
 	/** @type {import('$lib/types').ContentItem[]} */
 	$: items = data.items;
+	$: latestPost = items[0];
+	$: featuredPost = items.find((item) => item.tags.includes('featured')) || latestPost;
+
 </script>
 
 <svelte:head>
@@ -61,15 +64,16 @@
 
 	<section class="w-full mb-16">
 		<h3 class="mb-6 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
-			Featured Posts
+			Featured Post 🌟
 		</h3>
 		<div class="flex flex-col gap-6 md:flex-row">
-			<FeatureCard title="Hello World!" href="/hello-world" stringData="Nov 2022" />
+			<FeatureCard title={featuredPost.title} href={featuredPost.slug} stringData={featuredPost.subtitle} />
 		</div>
+		
 
 	</section>
 
-	<LatestPosts {items} />
+	<LatestPosts {items} /> 
 
 
 </div>
