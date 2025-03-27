@@ -1,9 +1,19 @@
 # The Nice Blog 🌭
 
-Sveltekit blog using [github issues as a CMS!](https://github.com/arienshibani/blogg/issues)
+My SvelteKit-powered blog that uses GitHub Issues as a CMS.
 
-## About Me
-My name is Arien Shibani. I work as a software developer in Norway. In my spare time I like to cook, drink wine, play chess and listen to 80's disco music. This is my blogg, where I post whatever I feel like posting.
+
+## Why is this interesting? 🤔
+
+Instead of relying on a traditional CMS (content management system), this blog leverages GitHub Issues for content management. Benefits include: 
+
+* Simple & Lightweight – No need for a database or a heavy CMS, just GitHub!
+
+* Built-in Collaboration – Readers can comment, react, or even suggest edits directly via GitHub Issues.
+
+* Version Control – Every post is automatically tracked with Git, allowing easy edits and history tracking.
+
+* Free Hosting – The blog can be hosted for free on platforms like Vercel, Netlify, or GitHub Pages.
 
 ## Contact
 
