@@ -6,8 +6,10 @@ body:
   - type: markdown
     attributes:
       value: |
-        Fill out all required fields below to create a new blog post. The frontmatter will be automatically generated from your inputs.
+        Fill out all required fields below. The frontmatter will be generated in the issue body.
         
+        **Important:** After filling out the form, make sure the frontmatter section at the bottom is properly formatted with your values.
+
   - type: input
     id: title
     attributes:
@@ -46,9 +48,6 @@ body:
       label: Publication Date
       description: Date in YYYY-MM-DD format (defaults to today if not provided)
       placeholder: "2024-01-15"
-      value: ""
-    validations:
-      required: false
 
   - type: dropdown
     id: category
@@ -67,7 +66,7 @@ body:
     id: tags
     attributes:
       label: Tags
-      description: Comma-separated list of tags (will be formatted as YAML array)
+      description: Comma-separated list of tags (e.g., "javascript, svelte, webdev")
       placeholder: "javascript, svelte, webdev"
     validations:
       required: true
@@ -106,16 +105,19 @@ body:
     attributes:
       value: |
         ---
-        title: ${{ fields.title }}
-        subtitle: ${{ fields.subtitle }}
-        description: ${{ fields.description }}
-        slug: ${{ fields.slug }}
-        tags: "${{ fields.tags }}"
-        category: ${{ fields.category }}
-        image: ${{ fields.image }}
-        date: ${{ fields.date }}
-        canonical: ${{ fields.canonical }}
+        **The frontmatter below will be auto-populated from the form fields above.**
+        
+        ---
+        title: 
+        subtitle: 
+        description: 
+        slug: 
+        tags: 
+        category: 
+        image: 
+        date: 
+        canonical: 
         ---
         
-        ${{ fields.content }}
+        **Your blog post content will appear below this line.**
 
