@@ -1,0 +1,121 @@
+name: New Blog Post
+description: Create a new blog post from a GitHub issue
+title: "[Blog Post] "
+labels: ["blog"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill out all required fields below to create a new blog post. The frontmatter will be automatically generated from your inputs.
+        
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: The main title of your blog post
+      placeholder: "My Amazing Blog Post"
+    validations:
+      required: true
+
+  - type: input
+    id: subtitle
+    attributes:
+      label: Subtitle
+      description: Optional subtitle for your blog post
+      placeholder: "A deeper look into..."
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A brief description of your blog post (used for meta tags and previews)
+      placeholder: "This post explores..."
+    validations:
+      required: true
+
+  - type: input
+    id: slug
+    attributes:
+      label: URL Slug
+      description: The URL-friendly version of your title (leave empty to auto-generate from title)
+      placeholder: "my-amazing-blog-post"
+
+  - type: input
+    id: date
+    attributes:
+      label: Publication Date
+      description: Date in YYYY-MM-DD format (defaults to today if not provided)
+      placeholder: "2024-01-15"
+      value: ""
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Select the category for this post
+      options:
+        - blog
+        - note
+        - tutorial
+        - project
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma-separated list of tags (will be formatted as YAML array)
+      placeholder: "javascript, svelte, webdev"
+    validations:
+      required: true
+
+  - type: input
+    id: image
+    attributes:
+      label: Cover Image URL
+      description: URL to the cover image for this post
+      placeholder: "https://example.com/image.png"
+
+  - type: input
+    id: canonical
+    attributes:
+      label: Canonical URL
+      description: If this post was published elsewhere, provide the canonical URL
+      placeholder: "https://example.com/original-post"
+
+  - type: textarea
+    id: content
+    attributes:
+      label: Blog Post Content
+      description: Write your blog post content in Markdown format
+      placeholder: |
+        # Introduction
+        
+        Your blog post content goes here...
+        
+        ## Section Title
+        
+        More content...
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        title: ${{ fields.title }}
+        subtitle: ${{ fields.subtitle }}
+        description: ${{ fields.description }}
+        slug: ${{ fields.slug }}
+        tags: "${{ fields.tags }}"
+        category: ${{ fields.category }}
+        image: ${{ fields.image }}
+        date: ${{ fields.date }}
+        canonical: ${{ fields.canonical }}
+        ---
+        
+        ${{ fields.content }}
+
